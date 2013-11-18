@@ -5,13 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 <meta charset="utf-8">
 <script type="text/javascript">
-         setTimeout(function () {
+         
+         setTimeout(redirect, 2000);
+         
+         function redirect() {
         	 window.location.href = "https://beta.undertile.com";
-         }, 2000);
+         }
+         
 </script>
 
 <style>
-	body {
+	.splash {
+		margin:auto;
+		width: 400px;
+		height: 400px;
 		background-image: url('./img/splash.png');
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -22,6 +29,10 @@
 
 <body>
 <!-- <a href="http://beta.undertile.com">undertile</a>  -->
+<a href="https://beta.undertile.com">
+	<div class="splash"></div>
+</a>
+
 </body>
 
 </html>
